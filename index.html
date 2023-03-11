@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Web Components Best Practices</title>
+</head>
+<body>
+    <h1>Lightning Web Components Best Practices</h1>
+    <p>Lightning Web Components (LWC) are a modern web development framework that leverages standard HTML, CSS, and JavaScript to create reusable and performant components for Salesforce. LWC follow some best practices that help make organizations more efficient and productive. Here are some of them:</p>
+    <ul>
+        <li><strong>Always name variables, methods, and components carefully.</strong> This helps avoid confusion and errors, and makes the code more readable and maintainable[^1^][1].</li>
+        <li><strong>Be mindful of case sensitivity.</strong> LWC are case-sensitive, so make sure to use consistent casing for files, folders, attributes, properties, events, etc[^1^][1].</li>
+        <li><strong>Instead of expressions, use getters.</strong> Getters are functions that return a value based on the component state. They are reactive, meaning they update automatically when the state changes. Expressions are not reactive and can cause performance issues[^2^][2] [^3^][3].</li>
+        <li><strong>Pass only primitive data in custom events.</strong> Custom events allow components to communicate with each other by sending and receiving data. However, passing complex objects or arrays can cause memory leaks and performance degradation. Instead, pass only primitive data types such as strings or numbers[^1^][1].</li>
+        <li><strong>Use Lightning Data Service (LDS) whenever possible.</strong> LDS is a service that provides access to Salesforce data without writing any server-side code. It handles caching, synchronization, offline support, security enforcement, and more. Using LDS reduces network requests and improves performance[^1^][1] [^4^][4] [^5^][5].</li>
+        <li><strong>Avoid using hardcoding; use custom labels instead.</strong> Custom labels are text values that can be translated into different languages and reused across components. They help avoid hardcoding text values that may change over time or need localization[^1^][1].</li>
+        <li><strong>Include error handling in the code logic.</strong> Error handling is a way of dealing with unexpected situations or failures in the code execution. It helps prevent crashes or unwanted behaviors and provides useful feedback to users[^3^][3].</li>
+        <li><strong>Specify fields instead of layout in lightning-record-form.</strong> lightning-record-form is a component that displays a form for creating or editing a record. By default, it uses the layout assigned to the record type or object. However, this can cause issues if the layout changes or contains unsupported fields. To avoid this problem specify fields explicitly using an array of field names[^3^][3].</li>
+
+    </ul>
+
+    <!-- Add any other content here -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Set a font for the whole document */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Add some space around the header */
+.header {
+    margin: 20px;
+}
+
+/* Make the header text larger and bold */
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Add some space around the list items */
+ul li {
+    margin: 10px;
+}
+
+/* Make the list items text smaller and italic */
+ul li strong {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Change the background color of the body */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Change the color of the header to blue */
+.header {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Change the color of every second list item to golden */
+ul li:nth-child(2n) {
+    background-color: #ffd700;
+}
